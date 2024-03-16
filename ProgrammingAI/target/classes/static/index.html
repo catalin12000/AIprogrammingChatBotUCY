@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <script type="text/babel" src="Main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Chat Room</title>
+</head>
+<body>
+
+<h1 id="header-title">Chat Room</h1>
+<main>
+
+</main>
+<form action="/addMessageandResponse" method="GET">
+    <div id="send-message-container">
+        <input type="text" id="message-input" name="message" placeholder="Type a message"
+               aria-describedby="button-addon2">
+        <button id="send-button" class="blue-button" type="submit">
+            <ion-icon name="send"></ion-icon>
+        </button>
+    </div>
+
+    <div id="buttons-container">
+        <div class="row">
+            <button type="button" class="blue-button" value="stile tounto text">Message 1</button>
+            <button type="button" class="blue-button" value="to 2 steili touto">Message 2</button>
+            <button type="button" class="blue-button" value="touto dame en pou to 3">Message 3</button>
+        </div>
+
+        <div class="row">
+            <button type="button" class="blue-button" value="atext tou 4">Message 4</button>
+            <button type="button" class="blue-button" value="to en 5">Message 5</button>
+            <button type="button" class="blue-button" value="to 6 re toutoo">Message 6</button>
+        </div>
+
+        <div class="row">
+            <button type="button" class="blue-button" value="hi this is a text to send from button 77777">Message 7</button>
+            <button type="button" class="blue-button" value="888888">Message 8</button>
+            <button type="button" class="blue-button" value="to text tou 999999">Message 9</button>
+        </div>
+    </div>
+</form>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    document.querySelectorAll("button").forEach(function (elem) {
+        elem.addEventListener("click", function (e) {
+            document.getElementById("message-input").value = e.target.value;
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+package ucy.ece318.assignment3;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface MessageRepository extends CrudRepository<Message, Integer> {
+
+}
